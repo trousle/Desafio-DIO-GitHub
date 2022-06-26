@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>flex wrap</title>
+		<style>
+			/* experimentar com este arquivo */
+			.flex-container {
+				display: flex;
+				height: 150px;
+				border: 2px solid black;
+				max-width: 300px;
+			}
+
+			.item {
+				font-size: 24px;
+				height: 50%;
+				text-align: center;
+				min-width: 100px;
+				line-height: 50px;
+			}
+
+			.wrap {
+				flex-wrap: wrap;
+			}
+
+			.reverse-wrap {
+				flex-wrap: wrap-reverse;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>no wrap</h2>
+		<section class="flex-container">
+			<article class="item">1</article>
+			<article class="item">2</article>
+			<article class="item">3</article>
+			<article class="item">4</article>
+		</section>
+
+		<h2>wrap</h2>
+		<section class="flex-container wrap">
+			<article class="item">1</article>
+			<article class="item">2</article>
+			<article class="item">3</article>
+			<article class="item">4</article>
+		</section>
+
+		<h2>reverse wrap</h2>
+		<section class="flex-container reverse-wrap">
+			<article class="item">1</article>
+			<article class="item">2</article>
+			<article class="item">3</article>
+			<article class="item">4</article>
+		</section>
+	</body>
+</html>
